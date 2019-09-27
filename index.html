@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CardápioLanches</title>
+</head>
+
+<body>
+
+    <div class="tabela">
+        <table border="1px solid #CCC">
+            <th>Especificação</th>
+            <th>Código</th>
+            <th>Preço</th>
+
+            <tr>
+                <td>Cachorro quente</td>
+                <td>100</td>
+                <td>4.00</td>
+            </tr>
+
+            <tr>
+                <td>Bauru simples</td>
+                <td>101</td>
+                <td>5.20</td>
+            </tr>
+
+            <tr>
+                <td>Bauru com ovo</td>
+                <td>102</td>
+                <td>5.80</td>
+            </tr>
+
+            <tr>
+                <td>Hamburger</td>
+                <td>103</td>
+                <td>4.20</td>
+            </tr>
+
+            <tr>
+                <td>Cheese burger</td>
+                <td>104</td>
+                <td>4.70</td>
+            </tr>
+
+            <tr>
+                <td>Refrigerante</td>
+                <td>105</td>
+                <td>2.50</td>
+            </tr>
+        </table>
+
+    </div>
+    <br />
+    <div class="form">
+        <form action="pedidos.php" method="POST">
+
+            Selecione um lanche
+            <select>
+                <option name="lanche" value="100">Cachorro Quente</option>
+                <option name="lanche" value="101">Bauru Simples</option>
+                <option name="lanche" value="102">Bauru com Ovo</option>
+                <option name="lanche" value="103">HamBurguer</option>
+                <option name="lanche" value="104">CheeseBurguer</option>
+                <option name="lanche" value="105">Refrigerante</option>
+            </select>
+
+            <!--
+Informe o código do Lanche desejado
+<input type="text" name="codigo" size="5" id="codigo">
+-->
+            <br />
+            <br />
+            Selecione a quantidade
+            <input type="number" name="quantidade" id="quantidade" placeholder="0">
+            <br />
+            <br />
+
+            <input type="submit" value="Fazer Pedido">
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
